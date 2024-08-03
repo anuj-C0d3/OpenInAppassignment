@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+android:id="@+id/linkFragment"
+android:icon="@drawable/link"
+    android:title="Link"
+     />
+    <item
+        android:id="@+id/coursesFragment"
+        android:icon="@drawable/courses"
+        android:title="Courses"
+        />
+    <item
+        android:id="@+id/compaignsFragment"
+        android:icon="@drawable/compaignicon"
+        android:title="Compaigns"
+        />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/user"
+        android:title="Profile"
+        />
+
+
+
+</menu>

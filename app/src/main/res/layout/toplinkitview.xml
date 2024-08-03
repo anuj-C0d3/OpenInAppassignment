@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0.5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingBottom="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="13dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/appimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/amazicon" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/linkName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/figtree_semibold"
+            android:text="Sample link name..."
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/cardView2"
+            app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+        <TextView
+            android:id="@+id/clickcounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/figtree_semibold"
+            android:text="11223"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linkName" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/figtree"
+            android:inputType="date"
+            android:text="Date"
+            android:textColor="#7E7E7E"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+            app:layout_constraintStart_toEndOf="@+id/cardView2" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/figtree"
+            android:text="Clicks"
+            android:textColor="#7E7E7E"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/date"
+            app:layout_constraintEnd_toEndOf="@+id/clickcounts"
+            app:layout_constraintStart_toStartOf="@+id/clickcounts" />
+
+        <TextView
+            android:id="@+id/linktoclick"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/linkbackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:inputType="textUri"
+            android:keyboardNavigationCluster="true"
+            android:linksClickable="true"
+            android:paddingLeft="15dp"
+            android:text="Link"
+            android:textColor="#0E6FFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

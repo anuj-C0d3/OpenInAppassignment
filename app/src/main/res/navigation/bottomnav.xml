@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomnav"
+    app:startDestination="@id/linkFragment">
+
+    <fragment
+        android:id="@+id/linkFragment"
+        android:name="com.example.openinapp.Fragments.LinkFragment"
+        android:label="fragment_link"
+        tools:layout="@layout/fragment_link" >
+        <action
+            android:id="@+id/action_linkFragment_to_coursesFragment"
+            app:destination="@id/coursesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="com.example.openinapp.Fragments.CoursesFragment"
+        android:label="fragment_courses"
+        tools:layout="@layout/fragment_courses" >
+        <action
+            android:id="@+id/action_coursesFragment_to_compaignsFragment"
+            app:destination="@id/compaignsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/compaignsFragment"
+        android:name="com.example.openinapp.Fragments.CompaignsFragment"
+        android:label="fragment_compaigns"
+        tools:layout="@layout/fragment_compaigns" >
+        <action
+            android:id="@+id/action_compaignsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.openinapp.Fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_linkFragment"
+            app:destination="@id/linkFragment" />
+    </fragment>
+</navigation>
